@@ -166,7 +166,7 @@ public class BetterGuiMerchant extends MerchantScreen implements AutoTrade {
             return false;
         if (a.getItem() == b.getItem()
         &&  (!a.isDamageable() || a.getDamage()==b.getDamage())
-        &&   ItemStack.canCombine(a, b))
+        &&   ItemStack.areItemsAndComponentsEqual(a, b))
             return true;
         return false;
     }
